@@ -1,12 +1,12 @@
 <a id="billeder">
   <section>
     <h2>Billeder</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-      cupiditate ipsum eveniet sequi totam voluptates sint debitis maiores
-      dolores voluptas expedita quia aut incidunt excepturi, nam possimus nulla
-      consectetur quam.
-    </p>
+    <aside>
+      <div>
+        <img src="../../public/img/_6090022.jpeg" />
+      </div>
+      <img src="../../public/img/nikkormat-ft2-orestad-c-6.jpg" />
+    </aside>
   </section>
 </a>
 <style>
@@ -25,5 +25,22 @@
   p {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
+  }
+  img {
+    max-width: 100%;
+    margin: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    align-items: center;
+  }
+  aside div {
+    display: grid;
+    height: 100%;
   }
 </style>
