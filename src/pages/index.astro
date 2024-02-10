@@ -1,3 +1,13 @@
+---
+import Header from "../components/Header.astro";
+import Bogen from "../components/Bogen.astro";
+import Anmeldelser from "../components/Anmeldelser.astro";
+import Kapitler from "../components/Kapitler.astro";
+import Forfatteren from "../components/Forfatteren.astro";
+import Billeder from "../components/Billeder.astro";
+import Køb from "../components/Køb.astro";
+---
+
 <html lang="da">
   <head>
     <meta charset="utf-8" />
@@ -5,31 +15,28 @@
     <title>Københavnerbilleder</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#bogen">Bogen</a></li>
-          <li><a href="#bogen">Bogen</a></li>
-          <li><a href="#bogen">Bogen</a></li>
-          <li><a href="#bogen">Bogen</a></li>
-          <li><a href="#bogen">Bogen</a></li>
-          <li><a href="#bogen">Bogen</a></li>
-        </ul>
-      </nav>
-    </header>
+    <Header />
     <main>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestiae
-        amet placeat eaque. Iusto tempore beatae corrupti blanditiis, iste
-        cumque consequatur nemo? Ipsum non, et quisquam harum molestias dicta
-        officiis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
-        velit sint adipisci tempore, dolor molestias suscipit accusamus incidunt
-        excepturi saepe voluptatem illo iure, enim ex tenetur molestiae
-        repudiandae rem esse.lorem Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Provident at delectus, recusandae odit eius enim
-        consectetur obcaecati, tempora fuga modi libero distinctio reiciendis
-        vitae ad officia voluptates aliquid pariatur eveniet.
-      </p>
+      <Bogen />
+      <Anmeldelser />
+      <Kapitler />
+      <Forfatteren />
+      <Billeder />
+      <Køb />
     </main>
   </body>
 </html>
+
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+  }
+</style>
+
+<!-- farver:
+sort #2c2c2c
+lysegrå #474747
+lysebrun #C5BAAA
+orange #EE7828
+hvis tekst #fbfaf9 -->
