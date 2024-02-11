@@ -1,28 +1,115 @@
 <a id="bogen">
   <section>
-    <h2>Københavnerbilleder</h2>
+    <h2>Om bogen</h2>
+    <h3>Københavnerbilleder - en guide til hipster foto</h3>
+    <h4>af Sten Simons</h4>
+    <img
+      src="/public/img/kobenhavnerbilleder-sten-simons.jpg"
+      alt="billede af bogen Københavnerbilleder"
+      class="bigpic"
+    />
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-      cupiditate ipsum eveniet sequi totam voluptates sint debitis maiores
-      dolores voluptas expedita quia aut incidunt excepturi, nam possimus nulla
-      consectetur quam.
+      Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion
+      mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige
+      aspekter af streetfotografering fra grundlæggende teknik til kreative
+      eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God
+      læselyst!
     </p>
+    <ul>
+      <h3>Info</h3>
+      <li>Titel: Københavnerbilleder - en guide til hipster foto</li>
+      <li>Forfatter: Sten Simons</li>
+      <li>Antal sider: 344</li>
+      <li>Forlag: Mellem Linjerne</li>
+      <li>ISBN: 987-6-987654-32-1</li>
+      <li>Pris: 399.- kr</li>
+    </ul>
+    <aside>
+      <div>
+        <img
+          src="/img/kobenhavnerbilleder_aaben_venstre.jpg"
+          alt="billede af bogen Københavnerbilleder åben fra siden"
+        />
+        <img
+          src="/img/kobenhavnerbilleder_oppefra.jpg"
+          alt="billede af bogen Københavnerbilleder åben oppefra"
+        />
+      </div>
+      <img src="/img/sten_simons.jpg" alt="billede af forfatter Sten Simons" />
+    </aside>
   </section>
 </a>
 <style>
   section {
-    background-color: #c5baaa;
+    background-color: #ee7828;
     margin: 0;
-    padding: 20px;
+    padding: 30px;
   }
-  h2,
+
+  h3,
+  h4,
   p {
     color: #2c2c2c;
   }
-  h2 {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  ul h3 {
+    color: #ee7828;
+    margin-top: 0;
+    font-family: "lulo-outline", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
   }
-  p {
-    font-family: "Courier New", Courier, monospace;
+  ul li {
+    font-family: "lulo-one", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.5;
+  }
+
+  h3,
+  h4 {
+    font-family: "lulo-one", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+  }
+  p,
+  li {
+    font-family: monospace;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  h2 {
+    color: #fbfaf9;
+    font-size: 20px;
+    font-family: "lulo-one", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  ul {
+    list-style-type: none;
+    background-color: #2c2c2c;
+    color: #fbfaf9;
+    padding: 40px;
+    margin: 40px -30px 50px -30px;
+  }
+  .bigpic {
+    border: #fbfaf9 2px solid;
+  }
+  aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    align-items: center;
+    border: #fbfaf9 2px solid;
+  }
+  aside div {
+    display: grid;
   }
 </style>
