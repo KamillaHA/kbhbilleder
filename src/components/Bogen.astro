@@ -3,7 +3,11 @@
     <h2>Om bogen</h2>
     <h3>Københavnerbilleder - en guide til hipster foto</h3>
     <h4>af Sten Simons</h4>
-    <img src="../../public/img/kobenhavnerbilleder-sten-simons.jpg" />
+    <img
+      src="../../public/img/kobenhavnerbilleder-sten-simons.jpg"
+      alt="billede af bogen Københavnerbilleder"
+      class="bigpic"
+    />
     <p>
       Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion
       mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige
@@ -12,6 +16,7 @@
       læselyst!
     </p>
     <ul>
+      <h3>Info</h3>
       <li>Titel: Københavnerbilleder - en guide til hipster foto</li>
       <li>Forfatter: Sten Simons</li>
       <li>Antal sider: 344</li>
@@ -21,10 +26,16 @@
     </ul>
     <aside>
       <div>
-        <img src="../../public/img/kobenhavnerbilleder_aaben_venstre.jpg" />
-        <img src="../../public/img/kobenhavnerbilleder_oppefra.jpg" />
+        <img
+          src="/img/kobenhavnerbilleder_aaben_venstre.jpg"
+          alt="billede af bogen Københavnerbilleder åben fra siden"
+        />
+        <img
+          src="/img/kobenhavnerbilleder_oppefra.jpg"
+          alt="billede af bogen Københavnerbilleder åben oppefra"
+        />
       </div>
-      <img src="../../public/img/sten_simons.jpg" />
+      <img src="/img/sten_simons.jpg" alt="billede af forfatter Sten Simons" />
     </aside>
   </section>
 </a>
@@ -34,11 +45,15 @@
     margin: 0;
     padding: 20px;
   }
-  h2,
+
   h3,
   h4,
   p {
     color: #2c2c2c;
+  }
+  ul h3 {
+    color: #ee7828;
+    margin-top: 0;
   }
   h2,
   h3,
@@ -52,7 +67,11 @@
   }
   img {
     max-width: 100%;
+    height: auto;
     margin: 0;
+  }
+  h2 {
+    color: #fbfaf9;
   }
   ul {
     list-style-type: none;
@@ -61,11 +80,15 @@
     padding: 40px;
     margin: 0 -20px 0 -20px;
   }
+  .bigpic {
+    border: #ee7828 2px solid;
+  }
   aside {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 20px;
     align-items: center;
+    border: #ee7828 2px solid;
   }
   aside div {
     display: grid;
