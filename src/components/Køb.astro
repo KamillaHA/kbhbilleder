@@ -1,29 +1,84 @@
 <a id="køb">
   <section>
     <h2>Køb her</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-      cupiditate ipsum eveniet sequi totam voluptates sint debitis maiores
-      dolores voluptas expedita quia aut incidunt excepturi, nam possimus nulla
-      consectetur quam.
-    </p>
+    <div class="center">
+      <div class="købher">
+        <form>
+          <input type="radio" id="afhent" name="levering_af_pakke" />
+          <label for="afhent">Afhent selv</label>
+          <input
+            type="radio"
+            id="levering"
+            name="levering_af_pakke"
+            value="levering"
+          />
+          <label for="levering">PostNord</label><br />
+          <input type="text" placeholder="Navn" /><br />
+          <input type="text" placeholder="Adresse" /><br />
+          <input type="text" placeholder="Email" /><br />
+          <input type="text" placeholder="Postnr" />
+          <input type="text" placeholder="By" /><br />
+          <input type="text" placeholder="Mobil" /><br />
+          <input type="checkbox" id="nyhedsbrev" name="nyhedsbrev" />
+          <label for="nyhedsbrev">Ja tak til nyhedsbrev</label><br />
+          <input type="button" value="Gå til betaling" class="button" />
+        </form>
+      </div>
+    </div>
   </section>
 </a>
 <style>
   section {
     background-color: #c5baaa;
     margin: 0;
-    padding: 20px;
+    padding: 30px;
   }
   h2,
   p {
     color: #2c2c2c;
   }
   h2 {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: "lulo-one", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
   }
   p {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+    font-family: monospace;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  .købher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    padding-left: 70px;
+    margin-bottom: 60px;
+  }
+  form input {
+    padding: 6px;
+    margin: 4px;
+  }
+  .button {
+    background-color: #ee7828;
+    cursor: pointer;
+    border-style: none;
+    box-shadow: 1px 1px 8px hsl(36, 19%, 60%);
+    color: #fbfaf9;
+    font-family: "lulo-one", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+  }
+  form .button {
+    padding: 10px 20.5px 10px 20.5px;
+    margin-top: 20px;
+  }
+  .button:hover {
+    background-color: #2c2c2c;
+    color: #ee7828;
+    font-family: "lulo-outline", sans-serif;
   }
 </style>
